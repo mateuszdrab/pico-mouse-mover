@@ -10,3 +10,4 @@ print("USB drive disabled as not in safe mode")
 
 from ctrl import toggle_mouse_mover
 toggle_mouse_mover(False)
+print("Mouse mover toggled")
