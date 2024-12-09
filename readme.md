@@ -17,3 +17,10 @@ By default, USB storage is not presented unless booting in safe mode which can b
 from ctrl import safe_mode
 safe_mode()
 ```
+
+To disable auto toggling of the mouse mover on reset, you can run the below:
+
+```python
+from ctrl import auto_toggle_mouse_mover
+auto_toggle_mouse_mover(False)
+```

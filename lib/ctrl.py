@@ -24,3 +24,11 @@ def safe_mode():
     microcontroller.reset()
 
 # from ctrl import safe_mode; safe_mode()
+
+# Auto toggle mouse mover
+def auto_toggle_mouse_mover(enabled=True, reset=True):
+    put("TOGGLE_ON_RESET", int(enabled))
+    if reset:
+        microcontroller.reset()
+
+# from ctrl import auto_toggle_mouse_mover; auto_toggle_mouse_mover()
