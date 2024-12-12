@@ -16,7 +16,7 @@ def toggle_mouse_mover(reset=True):
     if reset:
         microcontroller.reset()
 
-# from ctrl import toggle_mouse_mover; toggle_mouse_mover()
+# from ctrl import toggle_mouse_mover; toggle_mouse_mover(reset=True)
 
 # Enter safe mode
 def safe_mode():
@@ -31,4 +31,21 @@ def auto_toggle_mouse_mover(enabled=True, reset=True):
     if reset:
         microcontroller.reset()
 
-# from ctrl import auto_toggle_mouse_mover; auto_toggle_mouse_mover()
+# from ctrl import auto_toggle_mouse_mover; auto_toggle_mouse_mover(enabled=True, reset=True)
+
+# Function to allow customization of the MOVE_INTERVAL variable
+def set_move_interval(interval=250, reset=True):
+    put("MOVE_INTERVAL", interval)
+    if reset:
+        microcontroller.reset()
+
+# from ctrl import set_move_interval; set_move_interval(interval=250, reset=True):
+
+# Function to allow customization of the MOVE_STEP variable
+
+def set_move_step(step=2, reset=True):
+    put("MOVE_STEP", step)
+    if reset:
+        microcontroller.reset() 
+
+# from ctrl import set_move_step; set_move_step(step=2, reset=True)
